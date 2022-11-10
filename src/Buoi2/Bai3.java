@@ -13,17 +13,17 @@ public class Bai3 {
 		{
 			a[i] = sc.nextInt();
 		}
-		int dem,demmax;
-		dem=demmax=1;
+		int dem,max;
+		dem=max=1;
 		for(int i=1;i<n;i++)
 		{
 
 			if(a[i-1] < a[i])
 			{
 				++dem;
-				if(demmax<dem)
+				if(max<dem)
 				{
-					demmax=dem;
+					max=dem;
 				}
 			}
 			else
@@ -31,7 +31,7 @@ public class Bai3 {
 				dem=1;
 			}
 		}
-		System.out.print(demmax);
+		System.out.print(max);
 	}
 
 }

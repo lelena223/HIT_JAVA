@@ -6,4 +6,5 @@
  *
  */
 module JAVA {
+	requires java.desktop;
 }

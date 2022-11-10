@@ -26,24 +26,24 @@ public class Bai4 {
 	{
 		int dem=0;
 		int i=0;
-				while(x>0) 
-				{
-					int y = x%10;
-					if(Check(y)==true)
-					{
-						i++;
-					}
-					x=x/10;
-					dem++;
-				}
-			if(i==dem) 
+		while(x>0) 
+		{
+			int y = x%10;
+			if(Check(y)==true)
 			{
-				return true;
+				i++;
 			}
-			else 
-			{
-				return false;
-			}
+			x=x/10;
+			dem++;
+		}
+		if(i==dem) 
+		{
+			return true;
+		}
+		else 
+		{
+			return false;
+		}
 	}
 	public static void main(String[] args) 
 	{
@@ -58,7 +58,7 @@ public class Bai4 {
 		int dem=0;
 		for(int i=0; i<n; i++) 
 		{
-			if(SNT(a[i])==true && Check(a[i])==true && a[i]>10) 
+			if(SNT(a[i])==true && Check(a[i])==true) 
 			{
 				System.out.print(a[i] + " ");
 				dem++;
